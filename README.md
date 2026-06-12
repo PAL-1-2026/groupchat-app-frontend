@@ -23,7 +23,7 @@ VITE_API_BASE_URL=http://localhost:8080/api   # Your backend URL
 VITE_SOCKET_URL=http://localhost:8080          # Socket.io URL (usually same host, no /api)
 ```
 
-3. **Start dev server**
+3. **Start dev servers**
 
 ```bash
 npm run dev
