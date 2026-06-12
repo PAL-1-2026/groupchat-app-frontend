@@ -23,7 +23,9 @@ pipeline {
                 sh '''
                     rm -rf node_modules
                     npm cache clean --force
-                    npm ci
+                    npm ci --include=optional
+                    npm install @rollup/rollup-linux-x64-gnu --save-dev --no-package-lock
+                    node -e "require('@rollup/rollup-linux-x64-gnu'); console.log('Rollup native dependency installed')"
                 '''
             }
         }
