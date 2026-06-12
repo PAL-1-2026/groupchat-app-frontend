@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION       = 'ap-southeast-1'
+        AWS_REGION       = 'us-east-1'
         ECR_REGISTRY     = credentials('ecr-registry-url')   // contoh: 123456789.dkr.ecr.ap-southeast-1.amazonaws.com
         ECR_REPO         = 'kabw-groupchat/frontend'
         IMAGE_TAG        = "build-${BUILD_NUMBER}-${GIT_COMMIT[0..6]}"
