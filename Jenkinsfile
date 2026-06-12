@@ -20,7 +20,11 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci'
+                sh '''
+                    rm -rf node_modules
+                    npm cache clean --force
+                    npm ci
+                '''
             }
         }
 
