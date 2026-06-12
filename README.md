@@ -53,4 +53,4 @@ npm run build
 
 - The backend must have CORS configured to allow your frontend origin with `credentials: true`
 - The `VITE_API_BASE_URL` must point to the `/api` prefix used in the backend router
-- Sessions are stored as HTTP-only cookies — ensure your frontend and backend share the same domain in production, or configure the backend CORS/cookie settings appropriately
+- Sessions are stored as HTTP-only cookies — ensure your frontend and backend share the same domain in production, or configure the backend CORS/cookie settings appropriately.
