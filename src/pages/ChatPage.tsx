@@ -237,7 +237,7 @@ function Sidebar({
             color: 'var(--text-primary)',
             whiteSpace: 'nowrap',
           }}>
-            GroupChat
+            Group-Chat
           </span>
         )}
       </div>
